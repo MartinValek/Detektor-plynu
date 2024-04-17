@@ -8,6 +8,23 @@
 
 
 ```C++
+#include <WiFi.h>
+#include <HTTPClient.h>
+
+const char* ssid = "WiFiSSID";
+const char* password = "WiFiPassword";
+
+const char* serverUrl = "webserver"; 
+const int gasPin = A0; 
+const int threshold = 500; 
+
+void setup() 
+{
+  Serial.begin(9600);
+  pinMode(gasPin, INPUT);
+  connectToWiFi();
+}
+
 void loop() 
 {
   int hodnotaP = analogRead(gasPin);
