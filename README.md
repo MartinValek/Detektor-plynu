@@ -11,6 +11,15 @@ https://coggle.it/diagram/ZhYydTc90NTCtGFO/t/varovn%C3%BD-syst%C3%A9m-p%C5%99i-%
 > Poznamka
 
 
+
+# Dektektor plynu
+
+Používal by se převážně v dolech, kde by pomáhal horníkům při těžení.
+
+Měli by ho u sebe a jakmile by detektor zachytil, že koncentrace plynu je moc vysoká, spustil by alarm.
+
+
+
 ```C++
 #include <WiFi.h>
 #include <HTTPClient.h>
