@@ -4,6 +4,10 @@
 
 *kurziva*
 
+
+https://coggle.it/diagram/ZhYydTc90NTCtGFO/t/varovn%C3%BD-syst%C3%A9m-p%C5%99i-%C3%BAniku-plynu-v-dole-question
+
+
 > Poznamka
 
 
