@@ -18,7 +18,7 @@ Používal by se převážně v dolech, kde by pomáhal horníkům při těžen�
 
 Měli by ho u sebe a jakmile by detektor zachytil, že koncentrace plynu je moc vysoká, spustil by alarm.
 
-#Kód
+# Kód
 
 ```C++
 #include <WiFi.h>
@@ -30,7 +30,9 @@ const char* ssid = "WiFiSSID";
 const char* password = "WiFiPassword";
  
 const int gasPin = A0;
-//Můžete zadat popřípadě jinou hodnotu 
+//Zadejte adresu webserveru
+const char* serverUrl = "webserver";
+//Práhová hodnota detekce plynu, můžete zadat popřípadě jinou hodnotu 
 const int threshold = 500; 
 
 void setup() 
