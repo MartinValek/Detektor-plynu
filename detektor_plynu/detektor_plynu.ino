@@ -2,10 +2,10 @@
 #include <WebServer.h>
 #include <HTTPClient.h>
 
-const char* ssid = "WiFiSSID";
-const char* password = "WiFiPassword";
+const char* ssid = "WiFiSSID"; //Zadejte název wifi síte
+const char* password = "WiFiPassword"; //Zadejte heslo 
 const char* serverUrl = "webserver"; 
-const int gasPin = "váš pin"; 
+const int gasPin = "váš pin"; //Zadejte váš pin
 const int threshold = 500; 
 
 WebServer server(80);
@@ -36,7 +36,6 @@ void loop()
 
   delay(1000);
 }
-
 void web() 
 {
   String html = "<!DOCTYPE html><html><head><title>Detektor Plynu</title>";
@@ -45,12 +44,12 @@ void web()
   html += ".gas-value {font-size: 24px; color: #ff6347;} .alert {color: #ff6347;}</style></head>";
   html += "<body><div class='container'><h1>Detektor Plynu</h1>";
   html += "<p><strong>Úroveň plynu:</strong> <span class='gas-value'>";
-  html += gasValue; // Přidáme aktuální hodnotu plynu
+  html += gasValue;
   html += "</span></p>";
-  
+
   if (gasValue > threshold) ´
   {
-    html += "<p class='alert'>Gas detected!</p>";
+    html += "<p class='alert'>Plyn detekován!</p>";
   }
 
   html += "</div></body></html>";
@@ -61,7 +60,7 @@ void WiFi_pripojeni()
 {
   Serial.println("Připojování k WiFi....");
   WiFi.begin(ssid, password);
-  
+
   while (WiFi.status() != WL_CONNECTED) 
   {
     delay(1000);
@@ -73,12 +72,12 @@ void WiFi_pripojeni()
   Serial.println(WiFi.localIP());
 }
 
-void sendDataToServer(int gasValue) 
+void odesilanidat (int gasValue) 
 {
   HTTPClient http;
-  
-  String postData = "gas_value=" + String(gasValue); // Příprava dat k odeslání
-  
+
+  String postData = "gas_value=" + String(gasValue); // Příprava odesílaní dat
+
   Serial.println("Posílání dat na server...");
   http.begin(serverUrl);
   http.addHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -93,3 +92,4 @@ void sendDataToServer(int gasValue)
     Serial.println("Chyba při odesílání dat na server.");
   }
 }
+
