@@ -1,5 +1,6 @@
 # Nadpis
 ## Podnadpis
+
 **tučně**
 
 *kurziva*
@@ -17,6 +18,18 @@ Měli by detektor u sebe a jakmile by detektor zachytil, že koncentrace plynu j
 # Myšlenková mapa
 
 https://coggle.it/diagram/ZhYydTc90NTCtGFO/t/varovn%C3%BD-syst%C3%A9m-p%C5%99i-%C3%BAniku-plynu-v-dole-question
+
+------------------
+
+# Použítý hardware
+
+MQ2 MQ-2 senzor hořlavých plynů propanu, metanu, butanu, vodíku
+
+------------------
+
+# Fotka zapojení
+
+![image](https://github.com/MartinValek/Detektor-plynu/assets/167297816/75b7afa8-18ab-4720-b85d-cdbb333a6b7d)
 
 ------------------
 
