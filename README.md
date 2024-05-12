@@ -1,12 +1,3 @@
-# Nadpis
-## Podnadpis
-
-**tučně**
-
-*kurziva*
-
-> Poznamka
-
 # Dektektor plynu
 
 Používal by se převážně v dolech, kde by pomáhal horníkům při jejich práci.
