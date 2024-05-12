@@ -16,6 +16,14 @@ https://coggle.it/diagram/ZhYydTc90NTCtGFO/t/varovn%C3%BD-syst%C3%A9m-p%C5%99i-%
 
 MQ2 MQ-2 senzor hořlavých plynů propanu, metanu, butanu, vodíku
 
+ESP32 Development Board 2.4GHz Dual-Mode WiFi+Bluetooth + USB-micro kabel
+
+------------------
+
+# Použítý software
+
+Arduiono IDE
+
 ------------------
 
 # Fotka zapojení
